@@ -1,0 +1,30 @@
+[user]
+  name = Your Name
+  email = username@domain.com
+  signingkey = your-public-ssh-key-string
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+#
+# Similar Windows Path
+#
+# C:\Program Files\1Password\op-ssh-sign.exe
+#
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+#
+# Acme Workdir
+#
+[includeIf "gitdir:~/Sites/acme/"]
+  path = ~/Sites/acme/.gitconfig
+
+#
+# Alpha Workdir
+#
+[includeIf "gitdir:~/Sites/alpha/"]
+  path = ~/Sites/alpha/.gitconfig

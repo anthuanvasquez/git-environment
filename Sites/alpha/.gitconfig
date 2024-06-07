@@ -1,0 +1,6 @@
+[user]
+  email = username@alpha.com
+  signingkey = your-gpg-key-string
+
+[gpg]
+  format = openpgp
